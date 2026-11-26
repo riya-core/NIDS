@@ -1,0 +1,67 @@
+{
+  "members_binary": [
+    "xgb",
+    "lgbm",
+    "catboost",
+    "extratrees",
+    "rf"
+  ],
+  "members_multiclass": [
+    "lgbm",
+    "catboost",
+    "cnn",
+    "dnn",
+    "mlp"
+  ],
+  "binary_method": "soft voting",
+  "binary_weights": {
+    "xgb": 0.200174104546248,
+    "lgbm": 0.2001609913818574,
+    "catboost": 0.20008239469437825,
+    "extratrees": 0.1998886213180276,
+    "rf": 0.19969388805948876
+  },
+  "multiclass_method": "stacking + class calibration",
+  "multiclass_weights": {
+    "lgbm": 0.20070011486067404,
+    "catboost": 0.20050686734452972,
+    "cnn": 0.19998200038957165,
+    "dnn": 0.19957600429795117,
+    "mlp": 0.19923501310727346
+  },
+  "class_scale": {
+    "Normal": 1.6487212707001282,
+    "Reconnaissance": 0.4723665527410147,
+    "Fuzzers": 1.0,
+    "Generic": 1.6487212707001282,
+    "Exploit-like": 1.0
+  },
+  "threshold_medium": 0.3157062379758153,
+  "threshold_high": 0.7678083892541021,
+  "target_fpr_high": 0.01,
+  "autoencoder_used": true,
+  "family_map": {
+    "DoS": "DoS / Exploit-like",
+    "Exploits": "DoS / Exploit-like",
+    "Other": "DoS / Exploit-like",
+    "Exploit-like": "DoS / Exploit-like",
+    "Reconnaissance": "Reconnaissance / scanning",
+    "Fuzzers": "Fuzzers",
+    "Generic": "Generic (cipher) attack",
+    "Normal": "Normal"
+  },
+  "class_names": [
+    "Normal",
+    "Reconnaissance",
+    "Fuzzers",
+    "Generic",
+    "Exploit-like"
+  ],
+  "individual_binary_thresholds": {
+    "xgb": 0.26899462938308716,
+    "lgbm": 0.2853043322804035,
+    "catboost": 0.2935130872563576,
+    "extratrees": 0.34423119683446096,
+    "rf": 0.32472341434536295
+  }
+}

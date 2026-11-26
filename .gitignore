@@ -62,7 +62,7 @@ Desktop.ini
 *.xls
 
 # Trained models, checkpoints, and weights
-models/
+
 *.h5
 *.pkl
 *.joblib
@@ -71,4 +71,3 @@ models/
 *.onnx
 
 # Processed data directories
-processed/
